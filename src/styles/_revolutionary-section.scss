@@ -1,0 +1,117 @@
+.revolutionary {
+  padding-top: 44px;
+  padding-bottom: 88px;
+  @media (min-width: 481px) {
+    padding-top: 88px;
+    padding-bottom: 98px;
+  }
+  @media (min-width: 993px) {
+    padding-top: 66px;
+    padding-bottom: 70px;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    max-width: 293px;
+    @include centered-content;
+    @media (min-width: 481px) {
+      max-width: 709px;
+    }
+    @media (min-width: 993px) {
+      max-width: 926px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+}
+.revolutionary__title {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: $rev-title-color;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  @media (min-width: 993px) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+.revolutionary__text {
+  margin-top: 27px;
+  margin-bottom: 34px;
+  color: $rev-text-color;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: $lato-font;
+  @media (min-width: 481px) {
+    @include centered-content;
+    max-width: 481px;
+    margin-top: 24px;
+    margin-bottom: 33px;
+  }
+  @media (min-width: 768px) {
+    max-width: 100%;
+    font-size: 21px;
+    line-height: 32px;
+    margin-top: 35px;
+    margin-bottom: 44px;
+  }
+  @media (min-width: 993px) {
+    font-size: 21;
+    margin-bottom: 28px;
+    max-width: 861px;
+  }
+}
+.svg-button__icon {
+  width: 16px;
+  height: 16px;
+  fill: $svg-icon-color;
+  margin-right: 3px;
+}
+.svg-button__content {
+  color: $svg-btn-text;
+  font-size: 12px;
+  @include inline-flex-center;
+  border-right: 1px solid $button-border-color;
+  padding: 3px 10px;
+}
+.svg-button__number {
+  font-size: 12px;
+  padding: 3px 10px;
+}
+.svg-button__inner {
+  @include inline-flex-center;
+}
+.svg-button {
+  font-family: sans-serif;
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid $button-border-color;
+  border-radius: 6px;
+  background-color: #fff;
+  &:hover {
+    background-color: $svg-btn-hover;
+  }
+  &:nth-child(3) {
+    @media (max-width: 480px) {
+      margin-top: 20px;
+    }
+  }
+}
+.svg-buttons-wrapper {
+  @include centered-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  @media (min-width: 481px) {
+    max-width: 400px;
+  }
+}
