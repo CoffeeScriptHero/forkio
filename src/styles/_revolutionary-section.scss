@@ -1,4 +1,4 @@
-.revolutionary {
+.body__revolutionary {
   padding-top: 44px;
   padding-bottom: 88px;
   @media (min-width: 481px) {
@@ -9,6 +9,8 @@
     padding-top: 66px;
     padding-bottom: 70px;
   }
+}
+.revolutionary {
   .container {
     padding-left: 10px;
     padding-right: 10px;
@@ -43,6 +45,7 @@
     line-height: 54px;
   }
 }
+
 .revolutionary__text {
   margin-top: 27px;
   margin-bottom: 34px;
@@ -96,7 +99,7 @@
   padding: 0;
   border: 1px solid $button-border-color;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: $white-color;
   &:hover {
     background-color: $svg-btn-hover;
   }
