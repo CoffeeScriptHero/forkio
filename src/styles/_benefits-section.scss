@@ -1,0 +1,84 @@
+.benefits {
+  .container {
+    overflow: hidden;
+    text-align: center;
+    padding-left: 23px;
+    padding-right: 23px;
+    @media (min-width: 481px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__title {
+    display: inline-block;
+    max-width: 240px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    color: $benefits-title-color;
+    margin-top: 32px;
+    margin-bottom: 30px;
+    @media (min-width: 481px) {
+      max-width: 541px;
+      margin-top: 62px;
+      margin-bottom: 47px;
+    }
+  }
+  &__main-img {
+    max-width: 500px;
+    min-height: 381px;
+    margin-bottom: 6px;
+    margin-left: -12px;
+  }
+}
+.benefits__list {
+  list-style: none;
+  padding: 0;
+  &-title {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $benefits-list-title-color;
+    margin-top: 27px;
+    margin-bottom: 14px;
+    @media (min-width: 481px) {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+  }
+  &-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $lato-font;
+    font-weight: 400;
+    color: $benefits-list-text-color;
+    margin: 0;
+    @media (min-width: 481px) {
+      max-width: 100%;
+    }
+  }
+
+  &-text-wrapper {
+    @media (min-width: 481px) {
+      text-align: left;
+      max-width: 100%;
+    }
+  }
+  &-item {
+    max-width: 274px;
+    @include centered-content;
+    @media (min-width: 481px) {
+      margin-left: auto;
+      max-width: 730px;
+      display: grid;
+    }
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 37px;
+  }
+  &-item:last-child {
+    margin-bottom: 58px;
+  }
+}
