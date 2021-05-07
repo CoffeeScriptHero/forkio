@@ -1,12 +1,33 @@
 .benefits {
+  text-align: center;
+  overflow: hidden;
+  @media (min-width: 993px) {
+    display: grid;
+    grid-template-areas:
+      "container title"
+      "container img";
+    padding-top: 94px;
+    padding-bottom: 40px;
+    background: $benefits-background-color;
+    justify-content: center;
+  }
+
   .container {
-    overflow: hidden;
-    text-align: center;
     padding-left: 23px;
     padding-right: 23px;
+    margin-bottom: 58px;
+    grid-area: container;
     @media (min-width: 481px) {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 35px;
+      padding-right: 15px;
+      margin-bottom: 72px;
+    }
+    @media (min-width: 993px) {
+      margin-bottom: 0;
+      padding-left: 90px;
+      padding-top: 20px;
+      padding-right: 49px;
+      max-width: 800px;
     }
   }
   &__title {
@@ -18,22 +39,48 @@
     color: $benefits-title-color;
     margin-top: 32px;
     margin-bottom: 30px;
+    grid-area: title;
     @media (min-width: 481px) {
       max-width: 541px;
       margin-top: 62px;
       margin-bottom: 47px;
+    }
+    @media (min-width: 600px) {
+      font-size: 42px;
+      line-height: 44px;
+    }
+    @media (min-width: 993px) {
+      margin-bottom: 18px;
+      margin-top: 0px;
+      font-size: 48px;
+      line-height: 50px;
+      max-width: 612px;
     }
   }
   &__main-img {
     max-width: 500px;
     min-height: 381px;
     margin-bottom: 6px;
-    margin-left: -12px;
+    margin-left: 11px;
+    grid-area: img;
+    @media (min-width: 512px) {
+      float: right;
+    }
+    @media (min-width: 720px) {
+      max-width: 100%;
+      margin: 0;
+    }
+    @media (min-width: 993px) {
+      // max-width: ;;
+    }
   }
 }
 .benefits__list {
   list-style: none;
+  position: relative;
   padding: 0;
+  margin: 0;
+
   &-title {
     display: inline-block;
     font-size: 16px;
@@ -45,6 +92,7 @@
     @media (min-width: 481px) {
       margin-top: 0;
       margin-bottom: 16px;
+      line-height: 20px;
     }
   }
   &-text {
@@ -59,26 +107,33 @@
       max-width: 100%;
     }
   }
-
   &-text-wrapper {
     @media (min-width: 481px) {
-      text-align: left;
-      max-width: 100%;
+      max-width: 73%;
+    }
+    @media (min-width: 640px) {
+      max-width: 80%;
+    }
+    @media (min-width: 740px) {
+      max-width: 82%;
     }
   }
+
   &-item {
     max-width: 274px;
     @include centered-content;
     @media (min-width: 481px) {
-      margin-left: auto;
       max-width: 730px;
-      display: grid;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (min-width: 993px) {
+      margin: 0;
     }
   }
   &-item:not(:last-child) {
     margin-bottom: 37px;
-  }
-  &-item:last-child {
-    margin-bottom: 58px;
   }
 }
