@@ -1,6 +1,7 @@
 .benefits {
   text-align: center;
   position: relative;
+  overflow: hidden;
   @media (min-width: 993px) {
     padding-top: 94px;
     padding-bottom: 40px;
@@ -9,7 +10,6 @@
   .container {
     padding-left: 23px;
     padding-right: 23px;
-    overflow: hidden;
     @include centered-content;
     @media (min-width: 481px) {
       padding-left: 35px;
@@ -54,33 +54,33 @@
     }
   }
   &__main-img {
-    max-width: 500px;
+    max-width: 480px;
     max-height: 381px;
-    padding-top: 58px;
+    margin-top: 58px;
     grid-area: img;
+    float: left;
     @media (min-width: 483px) {
-      position: absolute;
       max-width: 100%;
       max-height: 100%;
-      padding-top: 73px;
-      right: 0;
-      padding-left: 40px;
+      margin-top: 73px;
+      padding: 0;
+      float: right;
     }
     @media (min-width: 993px) {
       position: relative;
-      padding: 0;
+      margin: 0;
       min-height: 340px;
     }
   }
 }
 .benefits__list {
-  list-style: none;
   position: relative;
-  padding: 0;
+  @include list-reset;
   margin: 0;
   grid-area: list;
   @media (min-width: 481px) {
     max-width: 730px;
+    @include centered-content;
   }
   @media (min-width: 993px) {
     max-width: 540px;

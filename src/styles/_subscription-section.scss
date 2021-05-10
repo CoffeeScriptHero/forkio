@@ -1,0 +1,210 @@
+.subscription {
+  position: relative;
+  background-color: #4b3b4e;
+  @media (min-width: 481px) {
+    background-color: transparent;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -5;
+      background-image: url("../images/Backgrounds/fork-blurred-background.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .container {
+    max-width: 320px;
+    @include centered-content;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (min-width: 481px) {
+      max-width: 600px;
+    }
+    @media (min-width: 1150px) {
+      max-width: 1132px;
+    }
+  }
+  &__title {
+    max-width: 320px;
+    display: inline-block;
+    color: $white-color;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    margin-top: 14px;
+    @media (min-width: 481px) {
+      margin-top: 88px;
+      margin-bottom: 39px;
+      font-size: 42px;
+      line-height: 44px;
+      max-width: 605px;
+    }
+    @media (min-width: 1150px) {
+      margin-bottom: 61px;
+      margin-top: 112px;
+      font-size: 48px;
+      line-height: 50px;
+      max-width: 650px;
+    }
+  }
+}
+.prices {
+  @include list-reset;
+  @include centered-content;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 14px;
+  @media (min-width: 481px) {
+    padding-bottom: 73px;
+  }
+  @media (min-width: 620px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media (min-width: 1150px) {
+    padding-bottom: 97px;
+  }
+  &__item {
+    @include centered-content;
+    max-width: 256px;
+    max-height: 457px;
+    background-color: rgba(255, 255, 255, 0.11);
+    @media (min-width: 620px) {
+      margin: 0;
+      flex-grow: 1;
+      &:nth-child(1) {
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      &:nth-child(3) {
+        margin-right: 25px;
+      }
+    }
+    @media (min-width: 1150px) {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.06);
+    text-transform: uppercase;
+    @include prices-title-padding;
+  }
+  &__cost-wrapper {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  &__cost {
+    font-size: 60px;
+    line-height: 62px;
+    font-weight: 700;
+    color: $white-color;
+  }
+  &_dollar--font-weight-thinner {
+    font-weight: 400;
+  }
+  &__rate {
+    font-size: 14px;
+    position: relative;
+    line-height: 16px;
+    font-weight: 400;
+    color: $white-color;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 73px;
+  }
+  &__rate::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    top: 46px;
+    right: 98px;
+    background-color: $forkio-purple-line-color;
+  }
+  &__service {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $white-color;
+    margin: 0;
+    text-align: center;
+    max-width: 240px;
+    @include centered-content;
+  }
+  &__service--line-height-less {
+    line-height: 18px;
+  }
+  &__service-wrapper {
+    margin-bottom: 36px;
+  }
+  &__service-wrapper--directions_bottom {
+    margin-bottom: 74px;
+  }
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    color: $white-color;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 38px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-bottom: 37px;
+  }
+}
+.static-item {
+  max-width: 299px;
+  max-height: 562px;
+  background-color: rgba(70, 48, 72, 0.84);
+  &__title {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    background-color: rgba(0, 0, 0, 0.11);
+  }
+  &__cost-wrapper {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  &__cost {
+    font-size: 82px;
+    line-height: 84px;
+  }
+  &__rate {
+    margin-bottom: 91px;
+  }
+  &__rate::after {
+    top: 54px;
+    right: 119px;
+  }
+  &__service-wrapper {
+    margin-bottom: 83px;
+  }
+  &__service {
+    display: block;
+  }
+  &__btn {
+    margin-bottom: 47px;
+  }
+}
