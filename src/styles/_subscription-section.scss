@@ -21,7 +21,7 @@
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    @media (min-width: 481px) {
+    @media (min-width: 650px) {
       max-width: 600px;
     }
     @media (min-width: 1150px) {
@@ -37,7 +37,7 @@
     font-weight: 700;
     margin-bottom: 32px;
     margin-top: 14px;
-    @media (min-width: 481px) {
+    @media (min-width: 650px) {
       margin-top: 88px;
       margin-bottom: 39px;
       font-size: 42px;
@@ -59,10 +59,10 @@
   max-width: 100%;
   text-align: center;
   padding-bottom: 14px;
-  @media (min-width: 481px) {
+  @media (min-width: 650px) {
     padding-bottom: 73px;
   }
-  @media (min-width: 620px) {
+  @media (min-width: 650px) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -75,11 +75,11 @@
     max-width: 256px;
     max-height: 457px;
     background-color: rgba(255, 255, 255, 0.11);
-    @media (min-width: 620px) {
+    @media (min-width: 650px) {
       margin: 0;
       flex-grow: 1;
       &:nth-child(1) {
-        margin-left: 25px;
+        margin-left: 42px;
         margin-right: 25px;
       }
       &:nth-child(3) {
@@ -96,7 +96,15 @@
     }
   }
   &__item:not(:last-child) {
-    margin-bottom: 18px;
+    @media (max-width: 650px) {
+      margin-bottom: 18px;
+    }
+  }
+  &__item:nth-child(1),
+  &__item:nth-child(2) {
+    @media (min-width: 650px) and (max-width: 1150px) {
+      margin-bottom: 30px;
+    }
   }
   &__title {
     font-size: 24px;
@@ -156,8 +164,10 @@
   &__service-wrapper {
     margin-bottom: 36px;
   }
-  &__service-wrapper--directions_bottom {
-    margin-bottom: 74px;
+  .prices__service-wrapper--directions_bottom {
+    @media (min-width: 650px) {
+      margin-bottom: 67px;
+    }
   }
   &__btn {
     display: inline-block;
@@ -172,6 +182,11 @@
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.15);
     margin-bottom: 37px;
+  }
+  &__btn:nth-of-type(1) {
+    @media (max-width: 650px) {
+      margin-bottom: 67px;
+    }
   }
 }
 .static-item {
