@@ -1,0 +1,1 @@
+const btnMenu=document.getElementById("uppermenu__burger"),navMenu=document.getElementById("navmenu");let btnClass=btnMenu.className;btnMenu.addEventListener("click",()=>{"uppermenu__burger"===btnMenu.className?(btnMenu.className="uppermenu__burger--active",navMenu.style.display="block"):(btnMenu.className="uppermenu__burger",navMenu.style.display="none")});
