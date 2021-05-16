@@ -1,4 +1,3 @@
-
 @mixin centered-content {
   margin-left: auto;
   margin-right: auto;
@@ -34,12 +33,11 @@
 }
 
 @mixin menu_border {
-  content: '';
+  content: "";
   width: 8px;
   height: 53px;
-
   position: absolute;
   left: 2px;
 
-  background-color: #8D81AC;
+  background-color: #8d81ac;
 }

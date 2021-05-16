@@ -4,14 +4,14 @@
   @media (min-width: 481px) {
     background-color: transparent;
     &::before {
-      content: "";
-      position: absolute;
       width: 100%;
       height: 100%;
+      content: "";
+      position: absolute;
       z-index: -5;
       background-image: url("../images/Backgrounds/fork-blurred-background.png");
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: 50% 20%;
       background-size: cover;
     }
   }
@@ -75,6 +75,15 @@
     max-width: 256px;
     max-height: 457px;
     background-color: rgba(255, 255, 255, 0.11);
+    box-sizing: content-box;
+    &:not(:nth-child(3)) {
+      padding-bottom: 37px;
+    }
+    @media (max-width: 650px) {
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
     @media (min-width: 650px) {
       margin: 0;
       flex-grow: 1;
@@ -86,6 +95,12 @@
         margin-right: 25px;
       }
     }
+    @media (min-width: 650px) and (max-width: 1150px) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
     @media (min-width: 1150px) {
       &:not(:last-child) {
         margin-right: 15px;
@@ -93,17 +108,6 @@
       &:first-child {
         margin-left: 0;
       }
-    }
-  }
-  &__item:not(:last-child) {
-    @media (max-width: 650px) {
-      margin-bottom: 18px;
-    }
-  }
-  &__item:nth-child(1),
-  &__item:nth-child(2) {
-    @media (min-width: 650px) and (max-width: 1150px) {
-      margin-bottom: 30px;
     }
   }
   &__title {
@@ -166,7 +170,7 @@
   }
   .prices__service-wrapper--directions_bottom {
     @media (min-width: 650px) {
-      margin-bottom: 67px;
+      margin-bottom: 73px;
     }
   }
   &__btn {
@@ -181,9 +185,8 @@
     border: 1px solid transparent;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.15);
-    margin-bottom: 37px;
   }
-  &__btn:nth-of-type(1) {
+  &__btn:first-child {
     @media (max-width: 650px) {
       margin-bottom: 67px;
     }
