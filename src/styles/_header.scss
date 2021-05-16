@@ -12,7 +12,7 @@
     @include content_general_centrify;
     flex-direction: column;
 
-    background-image: url("/src/images/Backgrounds/banner-background.png");
+    background-image: url("../images/Backgrounds/banner-background.png");
     background-position: center;
     background-size: cover;
   }
@@ -209,13 +209,13 @@
   &__burger {
     width: 26px;
     height: 21px;
-    background: url("/src/images/Header/menu.png");
+    background: url("../images/Header/menu.png");
 
     &--active {
       margin-left: 1px;
       width: 25px;
       height: 25px;
-      background: url("/src/images/Header/close.png");
+      background: url("../images/Header/close.png");
     }
   }
 
