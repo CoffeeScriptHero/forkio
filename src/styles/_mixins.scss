@@ -1,8 +1,45 @@
+
 @mixin centered-content {
   margin-left: auto;
   margin-right: auto;
 }
+
 @mixin inline-flex-center {
   display: inline-flex;
   align-items: center;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin prices-title-padding {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin: 0;
+}
+
+@mixin content_general_centrify {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin header_text($fsize, $lheight, $clr) {
+  font-size: $fsize;
+  line-height: $lheight;
+  color: $clr;
+}
+
+@mixin menu_border {
+  content: '';
+  width: 8px;
+  height: 53px;
+
+  position: absolute;
+  left: 2px;
+
+  background-color: #8D81AC;
 }

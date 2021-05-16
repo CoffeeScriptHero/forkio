@@ -1,12 +1,29 @@
 .benefits {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 993px) {
+    padding-top: 94px;
+    padding-bottom: 40px;
+    background: $benefits-background-color;
+  }
   .container {
-    overflow: hidden;
-    text-align: center;
     padding-left: 23px;
     padding-right: 23px;
+    @include centered-content;
     @media (min-width: 481px) {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 35px;
+      padding-right: 15px;
+    }
+    @media (min-width: 993px) {
+      max-width: 1350px;
+      padding-left: 80px;
+      padding-right: 0;
+      display: grid;
+      grid-template-areas:
+        "list title"
+        "list img";
+      justify-content: center;
     }
   }
   &__title {
@@ -18,22 +35,58 @@
     color: $benefits-title-color;
     margin-top: 32px;
     margin-bottom: 30px;
+    grid-area: title;
     @media (min-width: 481px) {
       max-width: 541px;
       margin-top: 62px;
       margin-bottom: 47px;
     }
+    @media (min-width: 600px) {
+      font-size: 42px;
+      line-height: 44px;
+    }
+    @media (min-width: 993px) {
+      margin-bottom: 18px;
+      margin-top: 0px;
+      font-size: 48px;
+      line-height: 50px;
+      max-width: 100%;
+    }
   }
   &__main-img {
-    max-width: 500px;
-    min-height: 381px;
-    margin-bottom: 6px;
-    margin-left: -12px;
+    max-width: 480px;
+    max-height: 381px;
+    margin-top: 58px;
+    grid-area: img;
+    float: right;
+    margin-right: -205px;
+    @media (min-width: 483px) {
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: 73px;
+      margin-right: 0;
+    }
+    @media (min-width: 993px) {
+      position: relative;
+      margin: 0;
+      min-height: 340px;
+    }
   }
 }
 .benefits__list {
-  list-style: none;
-  padding: 0;
+  position: relative;
+  @include list-reset;
+  margin: 0;
+  grid-area: list;
+  @media (min-width: 481px) {
+    max-width: 730px;
+    @include centered-content;
+  }
+  @media (min-width: 993px) {
+    max-width: 540px;
+    padding-right: 40px;
+    padding-top: 15px;
+  }
   &-title {
     display: inline-block;
     font-size: 16px;
@@ -45,6 +98,7 @@
     @media (min-width: 481px) {
       margin-top: 0;
       margin-bottom: 16px;
+      line-height: 20px;
     }
   }
   &-text {
@@ -55,30 +109,36 @@
     font-weight: 400;
     color: $benefits-list-text-color;
     margin: 0;
-    @media (min-width: 481px) {
-      max-width: 100%;
-    }
   }
-
   &-text-wrapper {
     @media (min-width: 481px) {
-      text-align: left;
-      max-width: 100%;
+      max-width: 73%;
+    }
+    @media (min-width: 640px) {
+      max-width: 80%;
+    }
+    @media (min-width: 740px) {
+      max-width: 82%;
+    }
+    @media (min-width: 993px) {
+      max-width: 75%;
     }
   }
   &-item {
     max-width: 274px;
     @include centered-content;
     @media (min-width: 481px) {
-      margin-left: auto;
-      max-width: 730px;
-      display: grid;
+      max-width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (min-width: 993px) {
+      margin: 0;
     }
   }
   &-item:not(:last-child) {
     margin-bottom: 37px;
-  }
-  &-item:last-child {
-    margin-bottom: 58px;
   }
 }

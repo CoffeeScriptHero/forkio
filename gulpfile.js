@@ -47,4 +47,9 @@ const imgCompressor = () => {
 };
 
 exports.build = series(cleaning, parallel(style, scripts), imgCompressor);
-exports.dev = watching;
+exports.dev = series(
+  cleaning,
+  parallel(style, scripts),
+  imgCompressor,
+  watching
+);

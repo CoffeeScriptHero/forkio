@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -14,6 +13,67 @@
     <title>Step Project Forkio</title>
   </head>
   <body class="body">
+    
+    <header class="body__header">
+      <div class="maincontent header__maincontent">
+
+        <div class="uppermenu maincontent__uppermenu">
+          <div class="uppermenu__logo">
+            <a href="#" class="maincontent__link">
+              <img src="./src/images/Header/logo.png" alt="logo">
+              <img src="./src/images/Header/logo-hover.png" alt="logo" class="maincontent__logo">
+            </a>
+            <h2 class="maincontent__title"><a href="#" class="maincontent__title__link">FORKIO</a></h2>
+          </div>
+
+          <button class="uppermenu__purchasebtn">
+            Buy Now
+          </button>
+
+          
+          <div class="uppermenu__burger" id="uppermenu__burger"></div>
+        </div>
+
+        <nav class="navmenu maincontent__navmenu" id="navmenu">
+          <ul class="navmenu__list">
+            <li class="navmenu__list-item">
+              <a href="#" class="navmenu__list-link option1">Overview</a>
+            </li>
+            <li class="navmenu__list-item">
+              <a href="#" class="navmenu__list-link option2">About Fork</a>
+            </li>
+            <li class="navmenu__list-item">
+              <a href="#" class="navmenu__list-link option3">Buying Options</a>
+            </li>
+            <li class="navmenu__list-item">
+              <a href="#" class="navmenu__list-link option4">Support</a>
+            </li>
+          </ul>
+        </nav>
+      
+        <section class="banner maincontent__banner">
+          <h1 class="banner__title">Fork App</h1>
+            
+          <p class="banner__description">
+            A Real Gamechanger In The World Of Web-Development
+          </p>
+
+          <p class="banner__version">
+            v. 2.8 For Mac and Windows
+          </p>
+
+          <button class="banner__downloadbtn">
+            Download For Free Now
+          </button>
+        </section>
+
+        <p class="maincontent__freetrial">
+          Unlimited 30-Days Trial Period
+        </p>
+        
+      </div>
+    </header>
+
     <section class="revolutionary body__revolutionary">
       <div class="container">
         <h3 class="revolutionary__title">Revolutionary editor</h2>
@@ -104,9 +164,11 @@
         </div>
       </div>
     </section>
+
     <section class="benefits body__benefits">
       <div class="container">
-        <h2 class="benefits__title">&lt;Here is what you get&gt;</Here></h2>
+      <h2 class="benefits__title">&lt;Here is what you get&gt;</Here></h2>
+
         <ul class="benefits__list">
           <li class="benefits__list-item">
             <div class="benefits__list-img-wrapper">
@@ -153,9 +215,127 @@
             </div>
           </li>
         </ul>
-        <img src="./dist/images/Benefits/benefits-main-img.png" alt="" class="benefits__main-img">
+      <img src="./dist/images/Benefits/benefits-main-img.png" alt="" class="benefits__main-img">
       </div>
     </section>
-    <script src="/dist/scripts/index.js"></script>
+
+    <section class="peopletalk body__peopletalk">
+      <div class="container">
+        <h3 class="peopletalk__title">People Are Talking About Fork</h3>
+
+        <ul class="peopletalk__list">
+          <li class="peopletalk__list-item">
+            <img src="./dist/images/Commentaries/logo5 3.png" alt="company logo" class="peopletalk__list-logo">
+            <p class="peopletalk__list-comment">
+              Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. 
+              Proin id dignissim magna. Sed varius urna et pulvinar venenatis. 
+            </p>
+          </li>
+          <li class="peopletalk__list-item">
+            <img src="./dist/images/Commentaries/logo6 3.png" alt="company logo" class="peopletalk__list-logo">
+            <p class="peopletalk__list-comment">
+              Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus 
+              molestie neque ac, mollis eleifend nibh.
+            </p>
+          </li>
+          <li class="peopletalk__list-item">
+            <img src="./dist/images/Commentaries/logo7 3.png" alt="company logo" class="peopletalk__list-logo">
+            <p class="peopletalk__list-comment">
+              In efficitur in velit et tempus. Duis nec odio dapibus, suscipit 
+              erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. 
+            </p>
+          </li>
+          <li class="peopletalk__list-item">
+            <img src="./dist/images/Commentaries/logo8 3.png" alt="company logo" class="peopletalk__list-logo">
+            <p class="peopletalk__list-comment">
+              Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. 
+              Proin id dignissim magna. Sed varius urna et pulvinar venenatis. 
+            </p>
+          </li>
+          <li class="peopletalk__list-item">
+            <img src="./dist/images/Commentaries/logo0 3.png" alt="company logo" class="peopletalk__list-logo">
+            <p class="peopletalk__list-comment">
+              Praesent ut eros tristique, malesuada lectus vel, lobortis massa. 
+              Nulla faucibus lorem id arcu consequat faucibus. 
+            </p>
+          </li>
+          <li class="peopletalk__list-item">
+            <img src="./dist/images/Commentaries/logo123 3.png" alt="company logo" class="peopletalk__list-logo">
+            <p class="peopletalk__list-comment">
+              Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. 
+              Pellentesque porttitor cursus massa et vestibulum.
+            </p>
+          </li>
+        </ul>
+
+        <p class="peopletalk__ps">
+          Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, 
+          imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum 
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        </p>
+      </div>
+
+      <hr class="peopletalk__dividingline">
+    </section>
+
+    <section class="subscription">
+      <div class="container">
+          <h3 class="subscription__title">Fork Subscription Pricing</h3>
+          <ul class="subscription__prices-list prices">
+            <li class="prices__item">
+              <h4 class="prices__title">Students</h4>
+              <div class="prices__cost-wrapper">
+                <span class="prices__dollar prices__cost prices_dollar--font-weight-thinner">$</span>
+                <span class="prices__number prices__cost">29</span>
+              </div>
+              <p class="prices__rate">per month</p>
+              <div class="prices__service-wrapper prices__service-wrapper--directions_bottom">
+              <p class="prices__service prices__service--line-height-less">Personal License</p>
+              </div>
+              <a href="#" class="prices__btn">purchase</a></li>
+            <li class="prices__item">
+              <h4 class="prices__title">professional</h4>
+              <div class="prices__cost-wrapper">
+                <span class="prices__dollar prices__cost prices_dollar--font-weight-thinner">$</span>
+                <span class="prices__number prices__cost">59</span>
+              </div>
+              <p class="prices__rate">per month</p>
+              <div class="prices__service-wrapper">
+              <p class="prices__service">Professional License</p>
+              <p class="prices__service">Email Support</p>
+              </div>
+              <a href="#" class="prices__btn">purchase</a>
+            </li>
+            <li class="prices__item static-item">
+              <h4 class="prices__title static-item__title">agency</h4>
+              <div class="prices__cost-wrapper static-item__cost-wrapper">
+                <span class="prices__dollar prices__cost prices_dollar--font-weight-thinner static-item__cost static-item__dollar">$</span>
+                <span class="prices__number prices__cost static-item__cost static-item__number">99</span>
+              </div>
+              <p class="prices__rate static-item__rate">per month</p>
+              <div class="prices__service-wrapper static-item__service-wrapper">
+              <p class="prices__service static-item__service">1-12 Team Members</p>
+              <p class="prices__service static-item__service">Phone Support</p>
+              </div>
+              <a href="#" class="prices__btn static-item__btn">purchase</a>
+            </li>
+            <li class="prices__item">
+              <h4 class="prices__title">enterprise</h4>
+              <div class="prices__cost-wrapper">
+                <span class="prices__dollar prices__cost prices_dollar--font-weight-thinner">$</span>
+                <span class="prices__number prices__cost">159</span>
+              </div>
+              <p class="prices__rate">per month</p>
+              <div class="prices__service-wrapper">
+              <p class="prices__service">Unlimited Team Members</p>
+              <p class="prices__service">24/ 7 Phone Support</p>
+              </div>
+              <a href="#" class="prices__btn">purchase</a>
+            </li>
+          </ul>
+      </div>
+    </section>
+    
+    <script src="/dist/js/index.js"></script>
   </body>
 </html>
